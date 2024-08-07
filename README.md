@@ -10,15 +10,6 @@ Technical specifications for the vacancy React-developer
 - React
 - Axios
 
-
-
-## Tech Stack
-
-**Client:** React, Redux, TypeScript
-
-**Server:** Axios, GitHub REST API
-
-
 ## Run Locally
 
 Clone the project
@@ -107,6 +98,11 @@ export const getRepoDetails = async (owner: string, repo: string) => {
 };
 ```
 
+## Tech Stack
+
+**Client:** React, Redux, TypeScript
+
+**Server:** Axios, GitHub REST API
 
 ## Running Tests
 
