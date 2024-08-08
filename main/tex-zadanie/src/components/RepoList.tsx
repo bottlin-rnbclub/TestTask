@@ -5,11 +5,11 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import { Repo } from '../types';
 
 const RepoList: React.FC = () => {
-  const repos = useAppSelector((state) => state.repos.repos); // кастом хук для доступа к состоянию Redux из компонентов React, эффективный способ получения данных, если не понятно
-  const dispatch = useAppDispatch();
+  const repos = useAppSelector((state) => state.repos.repos); // кастом хук для доступа к состоянию Redux из компонентов React, эффективный способ получения данных, если не понятно, спрашивайте у меня <3
+  const dispatch = useAppDispatch(); // отправка actions в redux, и он типизируемый кстати)
 
-  const handleRowClick = (owner: string, repo: string) => {
-    dispatch(fetchRepoDetails({ owner, repo }));
+  const handleRowClick = (owner: string, repo: string) => { // 2 параметра это автор и репозиторий, обе значения string
+    dispatch(fetchRepoDetails({ owner, repo })); // реализация запроса для получения деталей репозитория с помощью API гитхаба
   };
 
   return (
