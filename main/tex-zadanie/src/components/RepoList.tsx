@@ -5,7 +5,7 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 import { Repo } from '../types';
 
 const RepoList: React.FC = () => {
-  const repos = useAppSelector((state) => state.repos.repos);
+  const repos = useAppSelector((state) => state.repos.repos); // кастом хук для доступа к состоянию Redux из компонентов React, эффективный способ получения данных, если не понятно
   const dispatch = useAppDispatch();
 
   const handleRowClick = (owner: string, repo: string) => {
